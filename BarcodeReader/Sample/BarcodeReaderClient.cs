@@ -39,8 +39,9 @@ namespace BarcodeReader
             }
             try
             {
-                byte[] zero = BitConverter.GetBytes(message);
-                stream.Write(zero, 0, zero.Length);
+                byte[] messageBytes = BitConverter.GetBytes(message);
+                Array.Reverse(messageBytes);
+                stream.Write(messageBytes, 0, messageBytes.Length);
                 return true;
             }
             catch (Exception e)
