@@ -2,7 +2,7 @@
 Meta Quest向けの，スクリーンからバーコードを読み取るサーバーを立ち上げるADBシェルスクリプトを組み込むプラグインです．
 このプラグインでは，スクリーンパススルーからバーコードをスキャンすることも可能です．
 
-## Note:
+## Notes
 - このスクリプトはADBのShellコマンドから実行されるため，ユーザーは開発者モードのUSBデバッグを有効にする必要があります．
 - スクリーンのBarrel Distortionは補正していません．
 - 現時点では，QRコードのみを検出する仕様になっています．
@@ -28,8 +28,12 @@ Meta Quest向けの，スクリーンからバーコードを読み取るサー�
 
 ## Usage
 1. アプリのパッケージ名を確認する．
+    - Unityの場合，以下の手順で確認できる．
+        - デフォルトでは，`com.<YourCompanyName>.<YourProductName>`となる．
+            - Company NameとProduct Nameはメニューバーの`Edit` > `Project Settings`を選び，出てきたウィンドウのPlayerタブを開くと最上部に表示される．
+        - Playerタブの`Android Settings`を開き，`Other Settings`セクション内の`Identification` > `Override Default Package Name`が有効になっている場合，その下の`Package Name`がパッケージ名となる．
 2. Meta QuestのUSBデバッグを有効にする．
-3. PCにADBをインストールした後に以下のコマンドを実行する（Windows）．
+3. PCにADBをインストールした後に有線/無線でMeta Questを接続し，以下のコマンドを実行する（Windows）．
 
     ```powershell
     $packagePath = adb shell pm path <YourAppPackageName> | ForEach-Object { $_ -replace "^package:" }
@@ -49,7 +53,7 @@ Meta Quest向けの，スクリーンからバーコードを読み取るサー�
 ## License
 [MIT License](LICENSE)
 
-サードパーティのライセンスについては，[Note](#note)を参照してください．
+サードパーティのライセンスについては，[Notes](#notes)を参照してください．
 
 ##  Acknowledgments
 このプロジェクトで使用している，[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)，[Zxing](https://github.com/zxing/zxing)の開発者の皆様に感謝いたします．

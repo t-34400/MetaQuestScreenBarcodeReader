@@ -2,7 +2,7 @@
 An embedded plugin featuring a ADB shell script for setting up a server to read barcodes from the screen of Meta Quest.
 This plugin allows for the scanning of barcodes from the screen pass-through.
 
-## Note:
+## Notes
 - This script requires enabling USB debugging in developer mode, as it is executed via ADB shell commands.
 - Barrel distortion on the screen is not corrected.
 - At the moment, only QR codes are detected.
@@ -28,8 +28,12 @@ This plugin allows for the scanning of barcodes from the screen pass-through.
 
 ## Usage
 1. Obtain the package name of your app.
-2. Enable USB debugging on your Meta Quest device.
-3. Execute the following command on your PC after installing ADB (Windows):
+   - In Unity, you can obtain it through the following steps:
+     - By default, it is `com.<YourCompanyName>.<YourProductName>`.
+       - The Company Name and Product Name can be found at the top of the Player tab, accessed by selecting `Edit` > `Project Settings` from the menu bar and opening the Player tab in the window that appears.
+     - If the `Override Default Package Name` option is enabled under `Identification` > `Override Default Package Name` in the `Other Settings` section of the Player tab, the package name will be the one specified below it.
+2. Enable USB debugging on your Meta Quest.
+3. After installing ADB on your PC, connect your Meta Quest via wired or wireless connection and execute the following command (Windows).
    ```powershell
    $packagePath = adb shell pm path <YourAppPackageName> | ForEach-Object { $_ -replace "^package:" }
    adb shell CLASSPATH=$packagePath app_process /system/bin com.t34400.quest.barcode.ServerLauncher <ServerPort>
@@ -48,7 +52,7 @@ For sample receiving scripts, please refer to the [/BarcodeReader/Sample](./Barc
 ## License
 [MIT License](LICENSE)
 
-Please refer to the [Note](#note) section for third-party licenses.
+Please refer to the [Notes](#notes) section for third-party licenses.
 
 ##  Acknowledgments
 We would like to express our gratitude to the developers of [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) and [Zxing](https://github.com/zxing/zxing) for their contributions to this project.
