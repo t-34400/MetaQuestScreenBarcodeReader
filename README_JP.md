@@ -2,6 +2,12 @@
 Meta Quest向けの，スクリーンからバーコードを読み取るサーバーを立ち上げるADBシェルスクリプトを組み込むプラグインです．
 このプラグインでは，スクリーンパススルーからバーコードをスキャンすることも可能です．
 
+## Demo
+https://github.com/t-34400/MetaQuestScreenBarcodeReader/assets/49368264/3b8a5c36-1c15-481e-8127-53306258a3d8
+
+https://github.com/t-34400/MetaQuestScreenBarcodeReader/assets/49368264/721a8a5b-017a-46c2-8c6d-474358b415a0
+
+
 ## Notes
 - このスクリプトはADBのShellコマンドから実行されるため，ユーザーは開発者モードのUSBデバッグを有効にする必要があります．
 - スクリーンのBarrel Distortionは補正していません．
@@ -56,4 +62,6 @@ Meta Quest向けの，スクリーンからバーコードを読み取るサー�
 サードパーティのライセンスについては，[Notes](#notes)を参照してください．
 
 ##  Acknowledgments
-このプロジェクトで使用している，[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)，[Zxing](https://github.com/zxing/zxing)の開発者の皆様に感謝いたします．
+このリポジトリでは、[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)のソースコードや[Zxing](https://github.com/zxing/zxing)ライブラリを活用しています．開発者の皆様に感謝の意を表したいと思います．
+
+また、デモ動画に使用したフルーツの3Dモデルは[Quaternius](https://quaternius.com/index.html)からお借りしています．作者様に深く感謝します。
