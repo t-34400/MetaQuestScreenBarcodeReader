@@ -3,7 +3,10 @@ An embedded plugin featuring a ADB shell script for setting up a server to read 
 This plugin allows for the scanning of barcodes from the screen pass-through.
 
 ## Demo
+https://github.com/t-34400/MetaQuestScreenBarcodeReader/assets/49368264/3b8a5c36-1c15-481e-8127-53306258a3d8
+
 https://github.com/t-34400/MetaQuestScreenBarcodeReader/assets/49368264/721a8a5b-017a-46c2-8c6d-474358b415a0
+
 
 ## Notes
 - This script requires enabling USB debugging in developer mode, as it is executed via ADB shell commands.
