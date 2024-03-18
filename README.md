@@ -64,6 +64,6 @@ Please refer to the [Notes](#notes) section for third-party licenses.
 
 In this repository, we utilize the source code from [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) and the [Zxing](https://github.com/zxing/zxing) library. I would like to express my gratitude to the developers for their contributions.
 
-Additionally, the 3D model of the fruit used in the demo video is borrowed from [Quaternius](https://quaternius.com/index.html). I am deeply grateful to the author for their work.
+Additionally, the 3D models of the fruits used in the demo video is borrowed from [Quaternius](https://quaternius.com/index.html). I am deeply grateful to the author for their work.
 
 Thank you to the developers and the author for their invaluable contributions.
