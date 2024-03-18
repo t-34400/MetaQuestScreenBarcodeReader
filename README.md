@@ -60,5 +60,10 @@ For sample receiving scripts, please refer to the [/BarcodeReader/Sample](./Barc
 
 Please refer to the [Notes](#notes) section for third-party licenses.
 
-##  Acknowledgments
-We would like to express our gratitude to the developers of [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) and [Zxing](https://github.com/zxing/zxing) for their contributions to this project.
+##  Acknowledgements
+
+In this repository, we utilize the source code from [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) and the [Zxing](https://github.com/zxing/zxing) library. I would like to express my gratitude to the developers for their contributions.
+
+Additionally, the 3D model of the fruit used in the demo video is borrowed from [Quaternius](https://quaternius.com/index.html). I am deeply grateful to the author for their work.
+
+Thank you to the developers and the author for their invaluable contributions.

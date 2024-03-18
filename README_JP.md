@@ -61,7 +61,7 @@ https://github.com/t-34400/MetaQuestScreenBarcodeReader/assets/49368264/721a8a5b
 
 サードパーティのライセンスについては，[Notes](#notes)を参照してください．
 
-##  Acknowledgments
+##  Acknowledgements
 このリポジトリでは、[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)のソースコードや[Zxing](https://github.com/zxing/zxing)ライブラリを活用しています．開発者の皆様に感謝の意を表したいと思います．
 
 また、デモ動画に使用したフルーツの3Dモデルは[Quaternius](https://quaternius.com/index.html)からお借りしています．作者様に深く感謝します。
